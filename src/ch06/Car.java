@@ -24,7 +24,7 @@ public class Car {
 	// 자바에서는 생성자를 명시하지 않으면, 컴파일 과정에서 생성자를 명시해준다.
 	Car(String model, String color, int maxSpeed) {
 		this.model = model; 				// this : 이 해당 객체 자체를 의미한다.
-		this.color = color;					// 위에 생성된 객체에서 받아온 값이 할당이 된다.
+		this.color = color;					// 위에 생성된 객체에서 받아온 값이 할당이 된다.??
 		this.maxSpeed = maxSpeed;
 		
 	}
