@@ -1,6 +1,20 @@
 package ch06;
 
 public class Calculator {
+
+	// 메소드 오버로딩 : 같은 이름의 메소드를 여러개 만든다.
+	// * 매개변수의 순서, 갯수, 타입 중 하나가 달라야 한다. 안그럼 에러남!!
+	double areaRectangle (double width) {
+		return width * width;
+	}
+	double areaRectangle (double h, int a) {
+		return h * a;
+	}
+	double areaRectangle (double width, double height) {
+		return width * height;
+	}
+	
+	
 	// 리턴값이 없는 메소드 선언
 	void powerOn () {
 		System.out.println("전원켠다.");

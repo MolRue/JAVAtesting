@@ -1,4 +1,4 @@
-package test.ch04;
+package ch04;
 
 public class For_example {
 

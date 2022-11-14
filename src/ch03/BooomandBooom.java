@@ -1,4 +1,4 @@
-package test.ch03;
+package ch03;
 
 public class BooomandBooom {
 
