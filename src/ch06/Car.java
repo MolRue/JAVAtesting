@@ -7,9 +7,14 @@ public class Car {
 	String color;
 	int maxSpeed;
 	int speed;
+	static int numbering = 0;
+	Car() {
+		numbering++;
+	}
 	// boolean start; 	//시동여부
 
 	// overloading : 생성자를 여러개 둘수가 있다.
+
 	
 	Car(String model) {
 //		this.model = model;
