@@ -33,7 +33,7 @@ public static void main(String[] args) {
 	Sample count = new Sample();
 	
 	System.out.println(cnt);
-	// 1. cnt의 경우 static을 붙여놔서 동일한 pakage안에서 사용할 수 있다! 
+	// 1. cnt의 경우 static을 붙여놔서 동일한 pakage안에서도 사용할 수 있다! 
 	// 2. 다만 다른 class파일 에서 사용하려면 호출 명령어를 더 써줘야 한다.
 	System.out.println(count.count);
 	// 2) 호출도 따로 해줘야 한다. 
