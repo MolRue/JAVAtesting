@@ -10,8 +10,8 @@ public class CustomerApplication {
 		
 		//고객명단
 		//Silver
-		Customer costomer001 = new Customer(10010, "철수");
-		Customer costomer002 = new Customer(10020, "영희");
+		Customer costomer001 = new Customer(10010, "고철수");
+		Customer costomer002 = new Customer(10020, "고영희");
 		//Gold
 		Customer costomer003 = new GoldCustomer(10030, "고길동");
 		Customer costomer004 = new GoldCustomer(10040, "고희동");

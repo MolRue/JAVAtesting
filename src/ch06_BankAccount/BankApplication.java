@@ -1,6 +1,9 @@
 package ch06_BankAccount;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import CH08.interface2.A;
 
 public class BankApplication {
 	private static Scanner scanner = new Scanner(System.in); // 스캐너 객체 생성
@@ -61,25 +64,63 @@ public class BankApplication {
 	// 2.계좌목록
 	public static void accountList() {
 		for (int i = 0; i < accountArray.length; i++) {
-
+			Account account = accountArray[i];
+			if (account != null) {
+				System.out.println("계좌번호: " + account.getAno());
+				System.out.println("예금주: " + account.getOwner());
+				System.out.println("예금액: " + account.getBalance());
+				System.out.println("======================");
+				}
+				break;
+			}
 		}
-	}
+	
 
 	// 3.예금
 	public static void diposit() {
+		System.out.println("-----------------------");
+		System.out.println("입금");
+		System.out.println("-----------------------");
+		System.out.println("계좌번호: ");
+		String ano = scanner.next();
 		// 계좌번호, 예금액 입력받기(scanner)
-		Account account = findAccount(ano); // 호출
 		// 계좌번호로 계좌를 찾을수 있어야 한다?
+		System.out.println("입금액 : ");
+		String balance = scanner.next();
+		Account account = findAccount(ano);// 호출
 		// 찾은 계좌에 예금을 해준다.
-		account.setBalance(account.getBalanc() + 얘금액);
+		if (account == null) {
+			System.out.println("결과 : 계좌가 없습니다.");
+			return;
+		} else {
+		account.setBalance(account.getBalance() + balance);
+		System.out.println("결과 : 입금이 완료되었습니다.");
+		return;
+		}
 	}
 
 	// 4.출금
 	public static void withdraw() {
-		// 계좌번호, 예금액 입력받기(scanner)
+		System.out.println("-----------------------");
+		System.out.println("출금");
+		System.out.println("-----------------------");
+		System.out.println("계좌번호: ");
+		String ano = scanner.next();
+		System.out.println("출금액");
+		String balance = scanner.next();
+		// 계좌번호, 출금액 입력받기(scanner)
+		Account account = findAccount(ano);
 		// 계좌번호로 계좌를 찾을수 있어야 한다.
 		// 찾은 계좌에 출금을 해준다.
-		account.setBalance(account.getBalanc() - 얘금액);
+		if (account == null) {
+			System.out.println("결과 : 계좌가 없습니다.");
+			return;
+		} else {
+		account.setBalance(account.getBalance() - balance);
+		System.out.println("결과 : 출금이 완료되었습니다.");
+		return;
+		}
+		
 	}
 
 	// 5. Account 배열에서 ano가 동일한 Account객체를 찾는 역할을 해주는 함수를 하나 만들수 있다.
