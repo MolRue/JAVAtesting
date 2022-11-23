@@ -6,7 +6,9 @@ public class DiceNO2 implements Dice{
 	Random random = new Random();	
 	
 	@Override
-	public void diceNum() {
-		System.out.println(random.nextInt(6));
+	public int diceNum() {
+		int diceB = random.nextInt(8)+1;
+		System.out.println(diceB);
+		return diceB;
 	}
 }

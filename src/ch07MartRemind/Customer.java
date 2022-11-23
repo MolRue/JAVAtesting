@@ -31,7 +31,7 @@ public class Customer {
 		return price; 		// price로 리턴해준다.
 	}
 	
-	public String showCustomerInfo() { // showCustomerInfo로 요청받으면 "(customerName) 님의 회원등급 :(customerGrade) 보너스포인트 : "bonusPoing" 로 출력되도록 리턴 
+	public String showCustomerInfo() { // showCustomerInfo로 요청받으면 "(customerName) 님의 회원등급 :(customerGrade) 보너스포인트 : "bonusPoint" 로 출력되도록 리턴 
 		return customerName + "님의 회원 등급 : " + customerGrade +"||"+"보너스 포인트 : " + bonusPoint + "점" + "||";
 	}
 	
