@@ -2,7 +2,6 @@ package CH08.Dice;
 
 import java.util.Random;
 import java.util.Scanner;
-import ch07MartRemind.Customer;
 import java.util.ArrayList;
 
 public class DiceBoardEx {
@@ -14,7 +13,7 @@ public class DiceBoardEx {
 	public static void main(String[] args) {
 		boolean run = true;
 		int Prograss = 0;
-		System.out.println("여러분의 EZEN 생존기");
+		System.out.println("제목없음");
 		while (run) {
 		
 		System.out.println("-------------------------");

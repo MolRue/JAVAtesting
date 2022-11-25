@@ -1,6 +1,6 @@
 package ch03;
 
-public class BooomandBooom {
+public class CH3quiz {
 
 	public static void main(String[] args) {
 		System.out.println("1------------------");
