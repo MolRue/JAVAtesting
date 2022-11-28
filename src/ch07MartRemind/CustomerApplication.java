@@ -46,9 +46,9 @@ public class CustomerApplication {
 		public static Customer findCustomer(int customerID) {
 			Customer resultCustomer = null;
 			
-//			for (Customer customer : customerList) {
-			for (int i = 0; i < customerList.size() ; i++ ) {
-				Customer customer = new Customer();
+			for (Customer customer : customerList) {
+//			for (int i = 0; i < customerList.size() ; i++ ) {
+				
 				if (customer.getCustomerID() == customerID) {
 					resultCustomer = customer;
 					break;
