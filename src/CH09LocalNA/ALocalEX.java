@@ -6,7 +6,7 @@ public class ALocalEX {
 		ALocal a = new ALocal();
 		
 		//메소드 호출을 통해서 객체를 생성
-		a.useB();
+		a.useB(0);
 
 	}
 

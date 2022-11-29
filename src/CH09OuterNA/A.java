@@ -25,8 +25,8 @@ public class A {
 	static class C {
 		void method() {
 			// 정적 멤버 클래스 에서는 바깥 클래스의 인스턴스 필드와 메소드에 접근할수 없다.
-			field1 = 10;	//X
-			method1();		//X
+			// field1 = 10;	//X
+			// method1();		//X
 		
 			// 오직 static 클래스와 메소드에만 접근 가능하다.
 			field2 = 10;	//O

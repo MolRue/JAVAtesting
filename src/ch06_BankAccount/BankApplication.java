@@ -1,9 +1,6 @@
 package ch06_BankAccount;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-
-import CH08.interface2.A;
 
 public class BankApplication {
 	private static Scanner scanner = new Scanner(System.in); // 스캐너 객체 생성
@@ -62,6 +59,7 @@ public class BankApplication {
 	}
 
 	// 2.계좌목록
+	@SuppressWarnings({ "unused" })
 	public static void accountList() {
 		for (int i = 0; i < accountArray.length; i++) {
 			Account account = accountArray[i];
